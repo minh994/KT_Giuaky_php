@@ -1,0 +1,23 @@
+<IfModule mod_rewrite.c>
+    RewriteEngine On
+    RewriteBase /Kiemtra/
+    
+    # Chuyển hướng trang chủ đến danh sách sinh viên
+    RewriteRule ^$ student [L,R=302]
+    
+    # Chuyển hướng trực tiếp cho một số tài nguyên thường xuyên được sử dụng
+    RewriteRule ^students$ student [L,R=302]
+    RewriteRule ^courses$ course [L,R=302]
+    RewriteRule ^register$ course/list [L,R=302]
+    
+    # Cho phép truy cập trực tiếp đến thư mục public
+    RewriteRule ^public/ - [L]
+    
+    # Nếu yêu cầu không phải là một tệp tin thực
+    RewriteCond %{REQUEST_FILENAME} !-f
+    # Nếu yêu cầu không phải là một thư mục thực
+    RewriteCond %{REQUEST_FILENAME} !-d
+    
+    # Chuyển hướng mọi yêu cầu khác đến index.php
+    RewriteRule ^(.*)$ index.php [L,QSA]
+</IfModule> 

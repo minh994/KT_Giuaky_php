@@ -1,0 +1,141 @@
+/* Custom CSS */
+body {
+    background-color: #f8f9fa;
+    font-family: Arial, sans-serif;
+    padding-top: 20px;
+    padding-bottom: 70px;
+}
+
+.navbar {
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid #ddd;
+}
+
+.main-content {
+    flex: 1;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 0;
+    margin-bottom: 20px;
+}
+
+.card-header {
+    padding: 8px 15px;
+}
+
+.card-header h5 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+table img {
+    max-width: 80px;
+    max-height: 80px;
+}
+
+.form-label.required:after {
+    content: " *";
+    color: red;
+}
+
+.form-control, .form-select {
+    border-radius: 0;
+}
+
+.btn-primary {
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-primary:hover {
+    background-color: #0069d9;
+    border-color: #0062cc;
+}
+
+.btn-success {
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+    border-radius: 0;
+    padding: 4px 12px;
+    font-size: 14px;
+}
+
+.btn-success:hover {
+    background-color: #449d44;
+    border-color: #398439;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+footer {
+    background-color: #343a40;
+    color: white;
+    padding: 15px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.registration-details {
+    background-color: #f8f9fc;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+    margin-bottom: 20px;
+}
+
+.course-count {
+    font-weight: bold;
+    color: #007bff;
+}
+
+.credit-count {
+    font-weight: bold;
+    color: #28a745;
+}
+
+.status-available {
+    color: #28a745;
+}
+
+.status-limited {
+    color: #ffc107;
+}
+
+.status-full {
+    color: #dc3545;
+}
+
+.btn i {
+    margin-right: 5px;
+}
+
+.col-form-label {
+    text-align: right;
+    font-weight: normal;
+}
+
+@media (max-width: 767.98px) {
+    .hide-on-mobile {
+        display: none;
+    }
+    
+    .card-header h1 {
+        font-size: 1.2rem;
+    }
+}
+
+@media (max-width: 576px) {
+    .col-form-label {
+        text-align: left;
+    }
+} 
